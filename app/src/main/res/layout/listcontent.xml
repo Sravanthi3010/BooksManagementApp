@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:visibility="visible"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_name"
+        android:padding="3dp"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:text="name of the book"
+        android:layout_toRightOf="@+id/id"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/author_name"
+        android:layout_below="@+id/book_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/id"
+        android:text="author name"
+        android:padding="3dp"
+        android:visibility="visible"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/_date"
+        android:layout_below="@+id/author_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/id"
+        android:padding="3dp"
+        android:text="date created"
+        android:visibility="visible"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
